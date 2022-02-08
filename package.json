@@ -1,0 +1,20 @@
+
+{
+  "name": "03-node.js-bases",
+  "version": "0.0.1",
+  "description": "aplicación de linea de comandos de operaciones matemáticas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuidoSantiagoReta/03-node.js-bases.git"
+  },
+  "author": "Guido Santiago Reta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuidoSantiagoReta/03-node.js-bases/issues"
+  },
+  "homepage": "https://github.com/GuidoSantiagoReta/03-node.js-bases#readme"
+}
