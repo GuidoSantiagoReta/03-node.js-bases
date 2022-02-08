@@ -2,3 +2,4 @@
 
 
 * npm y package.json
+* nodemon
