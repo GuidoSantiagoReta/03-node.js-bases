@@ -4,8 +4,8 @@
   "description": "aplicación de linea de comandos de operaciones matemáticas",
   "main": "index.js",
   "scripts": {
-    "dev":"nodemon index",
-     "start":"node index",
+    "dev": " npx nodemon index",
+    "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +20,9 @@
   "homepage": "https://github.com/GuidoSantiagoReta/03-node.js-bases#readme",
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "yargs": "^17.3.1"
   }
 }

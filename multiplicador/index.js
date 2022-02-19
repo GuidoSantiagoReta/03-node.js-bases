@@ -3,23 +3,31 @@
  que lo que hace es  escribir un archivo en nuestro sistema de archivos
  y a ese archivo que crear le está agregando el valor(resultado), 
  si cambiamos la base prodriamos obtener las diferentes tablas*/
-
+ const colors = require('colors');
  const fs = require('fs'); 
  const {logica} = require( './logica');
 
 
-const multiplicar =(base) =>{
+const multiplicar =(base, limite, visualizar) =>{
+     
+     const resultado = logica(base, limite);
+     
+       if(visualizar){
+         console.log('================'.green);
+         console.log (`tabla del ${base}`.yellow);
+         console.log('================'.green);
+         }
+         
+         console.log(resultado);
+     
+     
     
-    console.log(`================`);
-    console.log (`tabla del ${base}`);
-    console.log(`================`);
-    
+     const nombreArchivo = `tabla-del-${base}.txt`;
+     fs.writeFileSync(`tablas/${nombreArchivo}`, resultado, (err)=>{
+          if (err) throw err;
+          console.log (`El archivo ${nombreArchivo} fue creado`.rainbow);
 
-       const resultado = logica(base);
-
-    
-     console.log(resultado);
-     fs.writeFileSync(`tablas/tabla-del-${base}`, resultado);  // escribiendo el archivo
+     });  // escribiendo el archivo
 
     }
     //exportando el objeto
