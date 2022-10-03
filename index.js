@@ -44,7 +44,7 @@ const {multiplicar} = require("./multiplicador");
 //PASE DE LA BASE POR PARÁMETRO
 multiplicar(argv.b, argv.l, argv.v);
 
-//seguir minuto 23:52
+
 
 
 
